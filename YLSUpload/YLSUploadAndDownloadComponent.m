@@ -7,10 +7,12 @@
     NSString *fileParam;
     
     void (^uploadProcessHandler)(float, float);
-    void (^uploadCompletionHandler)();
+    void (^uploadCompletionHandler)(NSDictionary*);
     
     void (^downloadProcessHandler)(float, float);
     void (^downloadCompletionHandler)(NSString*);
+    
+    NSDictionary *uploadResponse;// 上传服务响应
 }
 
 -(id) init
@@ -73,7 +75,7 @@
 
 #pragma mark - upload method
 
--(void) uploadFileAt:(NSString*)uploadFilePath toURL:(NSURL*)url ProcessHandler:(void(^)(float, float))processHandler CompletionHandler:(void(^)())completionHandler
+-(void) uploadFileAt:(NSString*)uploadFilePath toURL:(NSURL*)url ProcessHandler:(void(^)(float, float))processHandler CompletionHandler:(void(^)(NSDictionary*))completionHandler;
 {
     // 设置实例变量，在delegate method中调用
     uploadProcessHandler = processHandler;
@@ -132,7 +134,7 @@
     
     [session invalidateAndCancel];
     
-    uploadCompletionHandler();
+    uploadCompletionHandler(uploadResponse);
 }
 
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didSendBodyData:(int64_t)bytesSent totalBytesSent:(int64_t)totalBytesSent totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend
@@ -141,6 +143,14 @@
     float total = (float)totalBytesExpectedToSend;
     
     uploadProcessHandler(done, total);
+}
+
+#pragma mark - NSURLSessionDataDelegate method
+
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
+    didReceiveData:(NSData *)data
+{
+    uploadResponse = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
 }
 
 @end
