@@ -81,12 +81,9 @@
 		18DB237818B4DBC4002259DF /* YLSUpload */ = {
 			isa = PBXGroup;
 			children = (
-				18DB237918B4DBC5002259DF /* InfoPlist.strings */,
+				18DB238C18B4DC15002259DF /* Supporting Files */,
 				18DB237B18B4DBC5002259DF /* example */,
-				18DB238018B4DBC5002259DF /* main.m */,
 				18DB238118B4DBC5002259DF /* utils */,
-				18DB238418B4DBC5002259DF /* YLSUpload-Info.plist */,
-				18DB238518B4DBC5002259DF /* YLSUpload-Prefix.pch */,
 			);
 			path = YLSUpload;
 			sourceTree = "<group>";
@@ -109,6 +106,17 @@
 				18DB238318B4DBC5002259DF /* YLSUploadAndDownloadComponent.m */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		18DB238C18B4DC15002259DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18DB237918B4DBC5002259DF /* InfoPlist.strings */,
+				18DB238018B4DBC5002259DF /* main.m */,
+				18DB238418B4DBC5002259DF /* YLSUpload-Info.plist */,
+				18DB238518B4DBC5002259DF /* YLSUpload-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
