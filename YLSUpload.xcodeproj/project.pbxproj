@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18DB232718B4B90B002259DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DB232618B4B90B002259DF /* Foundation.framework */; };
+		18DB232918B4B90B002259DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DB232818B4B90B002259DF /* CoreGraphics.framework */; };
+		18DB232B18B4B90B002259DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DB232A18B4B90B002259DF /* UIKit.framework */; };
+		18DB238618B4DBC5002259DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18DB237918B4DBC5002259DF /* InfoPlist.strings */; };
+		18DB238718B4DBC5002259DF /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DB237D18B4DBC5002259DF /* DemoViewController.m */; };
+		18DB238818B4DBC5002259DF /* YLSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DB237F18B4DBC5002259DF /* YLSAppDelegate.m */; };
+		18DB238918B4DBC5002259DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DB238018B4DBC5002259DF /* main.m */; };
+		18DB238A18B4DBC5002259DF /* YLSUploadAndDownloadComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DB238318B4DBC5002259DF /* YLSUploadAndDownloadComponent.m */; };
+		18DB238B18B4DBC5002259DF /* YLSUpload-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18DB238418B4DBC5002259DF /* YLSUpload-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18DB232318B4B90B002259DF /* YLSUpload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLSUpload.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18DB232618B4B90B002259DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18DB232818B4B90B002259DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18DB232A18B4B90B002259DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18DB233F18B4B90B002259DF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		18DB237A18B4DBC5002259DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18DB237C18B4DBC5002259DF /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		18DB237D18B4DBC5002259DF /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		18DB237E18B4DBC5002259DF /* YLSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSAppDelegate.h; sourceTree = "<group>"; };
+		18DB237F18B4DBC5002259DF /* YLSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSAppDelegate.m; sourceTree = "<group>"; };
+		18DB238018B4DBC5002259DF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18DB238218B4DBC5002259DF /* YLSUploadAndDownloadComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSUploadAndDownloadComponent.h; sourceTree = "<group>"; };
+		18DB238318B4DBC5002259DF /* YLSUploadAndDownloadComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSUploadAndDownloadComponent.m; sourceTree = "<group>"; };
+		18DB238418B4DBC5002259DF /* YLSUpload-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "YLSUpload-Info.plist"; sourceTree = "<group>"; };
+		18DB238518B4DBC5002259DF /* YLSUpload-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YLSUpload-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18DB232018B4B90B002259DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DB232918B4B90B002259DF /* CoreGraphics.framework in Frameworks */,
+				18DB232B18B4B90B002259DF /* UIKit.framework in Frameworks */,
+				18DB232718B4B90B002259DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18DB231A18B4B90B002259DF = {
+			isa = PBXGroup;
+			children = (
+				18DB237818B4DBC4002259DF /* YLSUpload */,
+				18DB232518B4B90B002259DF /* Frameworks */,
+				18DB232418B4B90B002259DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18DB232418B4B90B002259DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18DB232318B4B90B002259DF /* YLSUpload.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18DB232518B4B90B002259DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18DB232618B4B90B002259DF /* Foundation.framework */,
+				18DB232818B4B90B002259DF /* CoreGraphics.framework */,
+				18DB232A18B4B90B002259DF /* UIKit.framework */,
+				18DB233F18B4B90B002259DF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18DB237818B4DBC4002259DF /* YLSUpload */ = {
+			isa = PBXGroup;
+			children = (
+				18DB237918B4DBC5002259DF /* InfoPlist.strings */,
+				18DB237B18B4DBC5002259DF /* example */,
+				18DB238018B4DBC5002259DF /* main.m */,
+				18DB238118B4DBC5002259DF /* utils */,
+				18DB238418B4DBC5002259DF /* YLSUpload-Info.plist */,
+				18DB238518B4DBC5002259DF /* YLSUpload-Prefix.pch */,
+			);
+			path = YLSUpload;
+			sourceTree = "<group>";
+		};
+		18DB237B18B4DBC5002259DF /* example */ = {
+			isa = PBXGroup;
+			children = (
+				18DB237C18B4DBC5002259DF /* DemoViewController.h */,
+				18DB237D18B4DBC5002259DF /* DemoViewController.m */,
+				18DB237E18B4DBC5002259DF /* YLSAppDelegate.h */,
+				18DB237F18B4DBC5002259DF /* YLSAppDelegate.m */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		18DB238118B4DBC5002259DF /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				18DB238218B4DBC5002259DF /* YLSUploadAndDownloadComponent.h */,
+				18DB238318B4DBC5002259DF /* YLSUploadAndDownloadComponent.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18DB232218B4B90B002259DF /* YLSUpload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18DB234F18B4B90B002259DF /* Build configuration list for PBXNativeTarget "YLSUpload" */;
+			buildPhases = (
+				18DB231F18B4B90B002259DF /* Sources */,
+				18DB232018B4B90B002259DF /* Frameworks */,
+				18DB232118B4B90B002259DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YLSUpload;
+			productName = YLSUpload;
+			productReference = 18DB232318B4B90B002259DF /* YLSUpload.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18DB231B18B4B90B002259DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YLS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = yilos;
+			};
+			buildConfigurationList = 18DB231E18B4B90B002259DF /* Build configuration list for PBXProject "YLSUpload" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 18DB231A18B4B90B002259DF;
+			productRefGroup = 18DB232418B4B90B002259DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18DB232218B4B90B002259DF /* YLSUpload */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18DB232118B4B90B002259DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DB238B18B4DBC5002259DF /* YLSUpload-Info.plist in Resources */,
+				18DB238618B4DBC5002259DF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18DB231F18B4B90B002259DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DB238718B4DBC5002259DF /* DemoViewController.m in Sources */,
+				18DB238A18B4DBC5002259DF /* YLSUploadAndDownloadComponent.m in Sources */,
+				18DB238918B4DBC5002259DF /* main.m in Sources */,
+				18DB238818B4DBC5002259DF /* YLSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18DB237918B4DBC5002259DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18DB237A18B4DBC5002259DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18DB234D18B4B90B002259DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		18DB234E18B4B90B002259DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18DB235018B4B90B002259DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YLSUpload/YLSUpload-Prefix.pch";
+				INFOPLIST_FILE = "YLSUpload/YLSUpload-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18DB235118B4B90B002259DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YLSUpload/YLSUpload-Prefix.pch";
+				INFOPLIST_FILE = "YLSUpload/YLSUpload-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18DB231E18B4B90B002259DF /* Build configuration list for PBXProject "YLSUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DB234D18B4B90B002259DF /* Debug */,
+				18DB234E18B4B90B002259DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18DB234F18B4B90B002259DF /* Build configuration list for PBXNativeTarget "YLSUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DB235018B4B90B002259DF /* Debug */,
+				18DB235118B4B90B002259DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18DB231B18B4B90B002259DF /* Project object */;
+}

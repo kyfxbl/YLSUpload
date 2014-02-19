@@ -7,12 +7,12 @@
     NSString *fileParam;
     
     void (^uploadProcessHandler)(float, float);
-    void (^uploadCompletionHandler)(NSDictionary*);
+    void (^uploadCompletionHandler)(NSData*);
     
     void (^downloadProcessHandler)(float, float);
     void (^downloadCompletionHandler)(NSString*);
     
-    NSDictionary *uploadResponse;// 上传服务响应
+    NSData *uploadResponse;// server response when upload
 }
 
 -(id) init
@@ -60,7 +60,7 @@
 {
     [session invalidateAndCancel];
     
-    NSString* tempFilePath = [location path];// 临时文件路径
+    NSString* tempFilePath = [location path];// download file temp path
     
     downloadCompletionHandler(tempFilePath);
 }
@@ -75,11 +75,13 @@
 
 #pragma mark - upload method
 
--(void) uploadFileAt:(NSString*)uploadFilePath toURL:(NSURL*)url ProcessHandler:(void(^)(float, float))processHandler CompletionHandler:(void(^)(NSDictionary*))completionHandler;
+-(void) uploadFileAt:(NSString*)uploadFilePath toURL:(NSURL*)url ProcessHandler:(void(^)(float, float))processHandler CompletionHandler:(void(^)(NSData*))completionHandler;
 {
-    // 设置实例变量，在delegate method中调用
+    // instance method, to use in delegate method
     uploadProcessHandler = processHandler;
     uploadCompletionHandler = completionHandler;
+    
+    uploadResponse = nil;// a new upload task, so reset upload response
     
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     
@@ -93,7 +95,7 @@
     [request setTimeoutInterval:30];
     [request setHTTPMethod:@"POST"];
     
-    // 以下2行是关键，NSURLSessionUploadTask不会自动添加Content-Type头
+    // add Content-Type for HTTP Header
     NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@", boundary];
     [request setValue:contentType forHTTPHeaderField: @"Content-Type"];
     
@@ -123,16 +125,28 @@
     return body;
 }
 
+#pragma mark - NSURLSessionDataDelegate method
+
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
+    didReceiveData:(NSData *)data
+{
+    uploadResponse = data;// this method will not be invoked, if server doesn't return any response
+}
+
 #pragma mark - NSURLSessionTaskDelegate method
 
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error
 {
-    // DownloadTask也会触发此回调，直接返回
+    // DownloadTask invoke this method too, return in this case
     if(![task isKindOfClass:[NSURLSessionUploadTask class]]){
         return;
     }
     
     [session invalidateAndCancel];
+    
+    if(error){
+        NSLog(@"upload error: %@", [error localizedDescription]);
+    }
     
     uploadCompletionHandler(uploadResponse);
 }
@@ -143,14 +157,6 @@
     float total = (float)totalBytesExpectedToSend;
     
     uploadProcessHandler(done, total);
-}
-
-#pragma mark - NSURLSessionDataDelegate method
-
-- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
-    didReceiveData:(NSData *)data
-{
-    uploadResponse = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
 }
 
 @end

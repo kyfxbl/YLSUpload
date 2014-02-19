@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>84E40BBF-DB47-4CA5-8B66-E0FBD5EAE471</string>
+	<key>IDESourceControlProjectName</key>
+	<string>YLSUpload</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D3EBB071-4126-4945-AA1E-2C3915C70823</key>
+		<string>https://github.com/kyfxbl/YLSUpload</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>YLSUpload.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D3EBB071-4126-4945-AA1E-2C3915C70823</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kyfxbl/YLSUpload</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D3EBB071-4126-4945-AA1E-2C3915C70823</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D3EBB071-4126-4945-AA1E-2C3915C70823</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YLSUpload</string>
+		</dict>
+	</array>
+</dict>
+</plist>
